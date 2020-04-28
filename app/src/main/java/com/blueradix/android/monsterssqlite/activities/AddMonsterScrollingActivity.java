@@ -88,9 +88,11 @@ public class AddMonsterScrollingActivity extends AppCompatActivity {
         String name = monsterNameEditText.getText().toString();
         if(name.trim().isEmpty()){
             Snackbar.make(v, "Name is required", Snackbar.LENGTH_SHORT).show();
+            monsterNameEditText.getText().clear();
+            monsterNameEditText.requestFocus();
             return;
         }
-        String description = monsterDescriptionEditText.getText().toString();
+        String description = monsterDescriptionEditText.getText().toString().trim();
         monster = new Monster();
         monster.setName(name);
         monster.setDescription(description);

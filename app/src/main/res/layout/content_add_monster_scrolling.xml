@@ -35,8 +35,8 @@
             android:hint="Type your monster's name"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
-            app:layout_constraintTop_toTopOf="parent">
-            <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/monsterNameEditText"
                 android:layout_width="match_parent"
@@ -51,8 +51,9 @@
             android:hint="add a short description"
             app:layout_constraintEnd_toStartOf="@+id/guideline4"
             app:layout_constraintStart_toStartOf="@+id/guideline3"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
-            <!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/monsterDescriptionEditText"
                 android:layout_width="match_parent"
