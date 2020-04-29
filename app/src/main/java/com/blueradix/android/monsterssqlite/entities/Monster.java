@@ -9,16 +9,16 @@ public class Monster implements Serializable {
     private Long id;
     private String name;
     private String description;
-    private Integer scariness;
+    private Long scariness;
     private String imageFileName;
-    private Integer votes;
-    private Integer stars;
+    private Long votes;
+    private Long stars;
 
     public Monster() {
 
     }
 
-    public Monster(Long id, String name, String description, Integer scariness, String imageFileName, Integer votes, Integer stars) {
+    public Monster(Long id, String name, String description, Long scariness, String imageFileName, Long votes, Long stars) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -52,11 +52,11 @@ public class Monster implements Serializable {
         this.description = description;
     }
 
-    public Integer getScariness() {
+    public Long getScariness() {
         return scariness;
     }
 
-    public void setScariness(Integer scariness) {
+    public void setScariness(Long scariness) {
         this.scariness = scariness;
     }
 
@@ -68,19 +68,19 @@ public class Monster implements Serializable {
         this.imageFileName = imageFileName;
     }
 
-    public Integer getVotes() {
+    public Long getVotes() {
         return votes;
     }
 
-    public void setVotes(Integer votes) {
+    public void setVotes(Long votes) {
         this.votes = votes;
     }
 
-    public Integer getStars() {
+    public Long getStars() {
         return stars;
     }
 
-    public void setStars(Integer stars) {
+    public void setStars(Long stars) {
         this.stars = stars;
     }
 

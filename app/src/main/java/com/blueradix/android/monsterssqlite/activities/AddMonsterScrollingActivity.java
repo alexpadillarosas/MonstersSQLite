@@ -27,7 +27,7 @@ public class AddMonsterScrollingActivity extends AppCompatActivity {
     private MaterialButton addMonsterButton;
 
     private Monster monster;
-    private Integer scarinessValue = 0;
+    private Long scarinessValue = 0L;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +68,7 @@ public class AddMonsterScrollingActivity extends AppCompatActivity {
         scarinessSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                scarinessValue = progress;
+                scarinessValue = Long.valueOf(progress);
             }
 
             @Override
